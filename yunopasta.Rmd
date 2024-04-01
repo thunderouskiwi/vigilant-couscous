@@ -8,6 +8,26 @@ output: github_document
 
 ## brilliant code goes here.
 
+library(tidyverse)
+
+PropUsed<-matrix(c(138,143,97,90,87,87,14,14,53,51),nrow=5,byrow=T)
+colnames(PropUsed)<-c("Offered","Used")
+rownames(PropUsed)<-c("None","Numbness","Distraction","Comfort","Combination")
+PropUsed
+addmargins(prop.table(PropUsed))
+
+PropUsed_df<- cbind(as_tibble(prop.table(PropUsed)), 
+                                Intervention = c("None","Numbness","Distraction","Comfort","Combination"))
+
+PropUsed_df <- PropUsed_df %>% 
+  pivot_longer(!Intervention, names_to = "Outcome", values_to = "Proportion")
+
+PropUsed_df
+
+ggplot(PropUsed_df, aes(x = Intervention, y = Proportion, fill = Outcome)) +
+  geom_bar(stat = "identity", position = 'fill')
+
+chisq.test(PropUsed)
 
 ```
 
