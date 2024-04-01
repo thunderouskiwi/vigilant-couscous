@@ -10,7 +10,7 @@ output: github_document
 
 library(tidyverse)
 
-PropUsed<-matrix(c(138,143,97,90,87,87,14,14,53,51),nrow=5,byrow=T)
+PropUsed<-matrix(c(178,146,99,79,77,79,21,19,52,59),nrow=5,byrow=T)
 colnames(PropUsed)<-c("Offered","Used")
 rownames(PropUsed)<-c("None","Numbness","Distraction","Comfort","Combination")
 PropUsed

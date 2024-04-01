@@ -20,30 +20,30 @@ library(tidyverse)
     ## ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 
 ``` r
-PropUsed<-matrix(c(138,143,97,90,87,87,14,14,53,51),nrow=5,byrow=T)
+PropUsed<-matrix(c(178,146,99,79,77,79,21,19,52,59),nrow=5,byrow=T)
 colnames(PropUsed)<-c("Offered","Used")
 rownames(PropUsed)<-c("None","Numbness","Distraction","Comfort","Combination")
 PropUsed
 ```
 
     ##             Offered Used
-    ## None            138  143
-    ## Numbness         97   90
-    ## Distraction      87   87
-    ## Comfort          14   14
-    ## Combination      53   51
+    ## None            178  146
+    ## Numbness         99   79
+    ## Distraction      77   79
+    ## Comfort          21   19
+    ## Combination      52   59
 
 ``` r
 addmargins(prop.table(PropUsed))
 ```
 
     ##                Offered       Used        Sum
-    ## None        0.17829457 0.18475452 0.36304910
-    ## Numbness    0.12532300 0.11627907 0.24160207
-    ## Distraction 0.11240310 0.11240310 0.22480620
-    ## Comfort     0.01808786 0.01808786 0.03617571
-    ## Combination 0.06847545 0.06589147 0.13436693
-    ## Sum         0.50258398 0.49741602 1.00000000
+    ## None        0.22002472 0.18046972 0.40049444
+    ## Numbness    0.12237330 0.09765142 0.22002472
+    ## Distraction 0.09517923 0.09765142 0.19283066
+    ## Comfort     0.02595797 0.02348578 0.04944376
+    ## Combination 0.06427689 0.07292954 0.13720643
+    ## Sum         0.52781211 0.47218789 1.00000000
 
 ``` r
 PropUsed_df<- cbind(as_tibble(prop.table(PropUsed)), 
@@ -58,16 +58,16 @@ PropUsed_df
     ## # A tibble: 10 × 3
     ##    Intervention Outcome Proportion
     ##    <chr>        <chr>        <dbl>
-    ##  1 None         Offered     0.178 
-    ##  2 None         Used        0.185 
-    ##  3 Numbness     Offered     0.125 
-    ##  4 Numbness     Used        0.116 
-    ##  5 Distraction  Offered     0.112 
-    ##  6 Distraction  Used        0.112 
-    ##  7 Comfort      Offered     0.0181
-    ##  8 Comfort      Used        0.0181
-    ##  9 Combination  Offered     0.0685
-    ## 10 Combination  Used        0.0659
+    ##  1 None         Offered     0.220 
+    ##  2 None         Used        0.180 
+    ##  3 Numbness     Offered     0.122 
+    ##  4 Numbness     Used        0.0977
+    ##  5 Distraction  Offered     0.0952
+    ##  6 Distraction  Used        0.0977
+    ##  7 Comfort      Offered     0.0260
+    ##  8 Comfort      Used        0.0235
+    ##  9 Combination  Offered     0.0643
+    ## 10 Combination  Used        0.0729
 
 ``` r
 ggplot(PropUsed_df, aes(x = Intervention, y = Proportion, fill = Outcome)) +
@@ -84,4 +84,4 @@ chisq.test(PropUsed)
     ##  Pearson's Chi-squared test
     ## 
     ## data:  PropUsed
-    ## X-squared = 0.3688, df = 4, p-value = 0.985
+    ## X-squared = 3.4825, df = 4, p-value = 0.4806
