@@ -76,10 +76,14 @@ install.packages(c("tidyverse",
                    "ggResidpanel",
                    "kableExtra",
                    "performance",
-                   "Lock5Data"))
+                   "Lock5Data",
+                   "gitcreds"))
 
 devtools::install_github("danmorse314/hockeyR")
 devtools::install_github("easystats/easystats")
 devtools::install_github("sportsdataverse/sportyR")
 devtools::install_github("bbc/bbplot")
 devtools::install_github("hrbrmstr/markdowntemplates")
+
+## setup/update github credentials w/ token
+# gitcreds::gitcreds_set()
