@@ -1,83 +1,83 @@
-install.packages(c("tidyverse",
-                   "e1071", 
-                   "mlr3", 
-                   "knitr", 
-                   "xgboost", 
-                   "xml", 
-                   "RMySQL", 
-                   "RPostgresSQL", 
-                   "RSQLite", 
-                   "car", 
-                   "httr", 
-                   "plotly", 
-                   "caret", 
-                   "tidyquant",
-                   "xlsx", 
-                   "XLConnect", 
-                   "foreign",
-                   "haven", 
-                   "ggvis",
-                   "rgl",
-                   "htmlwidgets",
-                   "DT",
-                   "googleVis",
-                   "tidymodels",
-                   "mgcv",
-                   "lme4", 
-                   "nlme",
-                   "randomForest",
-                   "multcomp",
-                   "vcd",
-                   "survival",
-                   "xtable",
-                   "shiny",
-                   "zoo",
-                   "xts",
-                   "quantmod",
-                   "data.table",
-                   "parallel",
-                   "XML",
-                   "jsonlite",
-                   "testthat",
-                   "polite",
-                   "devtools",
-                   'flextable', 
-                   'gt', 
-                   'gtsummary', 
-                   'likert', 
-                   'officedown', 
-                   'officer', 
-                   'sjlabelled', 
-                   'sjmisc', 
-                   'sjPlot', 
-                   'sysfonts',
-                   'usethis',
-                   'janitor',
-                   'summarytools',
-                   'ggstatsplot', 
-                   'RVAideMemoire',
-                   "cowplot",
-                   "bookdown",
-                   "markdown",
-                   "DataExplorer",
-                   "tidytuesdayR",
-                   "drlib",
-                   "glmnet",
-                   "Matrix", 
-                   "tidytext",
-                   "rstanarm",
-                   "ggiraph",
-                   "leaflet",
-                   "DT",
-                   "patchwork",
-                   "plotly",
-                   "abd",
-                   "car",
-                   "ggResidpanel",
-                   "kableExtra",
-                   "performance",
-                   "Lock5Data",
-                   "gitcreds"))
+if (!require('tidyverse')) install.packages('tidyverse')
+if (!require('e1071')) install.packages('e1071')
+if (!require('mlr3')) install.packages('mlr3')
+if (!require('knitr')) install.packages('knitr')
+if (!require('xgboost')) install.packages('xgboost')
+if (!require('xml')) install.packages('xml')
+if (!require('RMySQL')) install.packages('RMySQL')
+if (!require('RPostgresSQL')) install.packages('RPostgresSQL')
+if (!require('RSQLite')) install.packages('RSQLite')
+if (!require('car')) install.packages('car')
+if (!require('httr')) install.packages('httr')
+if (!require('plotly')) install.packages('plotly')
+if (!require('caret')) install.packages('caret')
+if (!require('tidyquant')) install.packages('tidyquant')
+if (!require('xlsx')) install.packages('xlsx')
+if (!require('XLConnect')) install.packages('XLConnect')
+if (!require('foreign')) install.packages('foreign')
+if (!require('haven')) install.packages('haven')
+if (!require('ggvis')) install.packages('ggvis')
+if (!require('rgl')) install.packages('rgl')
+if (!require('htmlwidgets')) install.packages('htmlwidgets')
+if (!require('DT')) install.packages('DT')
+if (!require('googleVis')) install.packages('googleVis')
+if (!require('tidymodels')) install.packages('tidymodels')
+if (!require('mgcv')) install.packages('mgcv')
+if (!require('lme4')) install.packages('lme4')
+if (!require('nlme')) install.packages('nlme')
+if (!require('randomForest')) install.packages('randomForest')
+if (!require('multcomp')) install.packages('multcomp')
+if (!require('vcd')) install.packages('vcd')
+if (!require('survival')) install.packages('survival')
+if (!require('xtable')) install.packages('xtable')
+if (!require('shiny')) install.packages('shiny')
+if (!require('zoo')) install.packages('zoo')
+if (!require('xts')) install.packages('xts')
+if (!require('quantmod')) install.packages('quantmod')
+if (!require('data.table')) install.packages('data.table')
+if (!require('parallel')) install.packages('parallel')
+if (!require('XML')) install.packages('XML')
+if (!require('jsonlite')) install.packages('jsonlite')
+if (!require('testthat')) install.packages('testthat')
+if (!require('polite')) install.packages('polite')
+if (!require('devtools')) install.packages('devtools')
+if (!require('flextable')) install.packages('flextable')
+if (!require('gt')) install.packages('gt')
+if (!require(''gtsummary')) install.packages(''gtsummary')
+if (!require(''likert')) install.packages(''likert')
+if (!require(''officedown')) install.packages(''officedown')
+if (!require(''officer')) install.packages(''officer')
+if (!require(''sjlabelled')) install.packages(''sjlabelled')
+if (!require(''sjmisc'')) install.packages(''sjmisc'')
+if (!require(''sjPlot'')) install.packages(''sjPlot'')
+if (!require(''sysfonts'')) install.packages(''sysfonts'')
+if (!require(''usethis'')) install.packages(''usethis'')
+if (!require(''janitor'')) install.packages(''janitor'')
+if (!require(''summarytools'')) install.packages(''summarytools'')
+if (!require(''ggstatsplot'')) install.packages(''ggstatsplot'')
+if (!require(''RVAideMemoire'')) install.packages(''RVAideMemoire'')
+if (!require('cowplot')) install.packages('cowplot')
+if (!require('bookdown')) install.packages('bookdown')
+if (!require('markdown')) install.packages('markdown')
+if (!require('DataExplorer')) install.packages('DataExplorer')
+if (!require('tidytuesdayR')) install.packages('tidytuesdayR')
+if (!require('drlib')) install.packages('drlib')
+if (!require('glmnet')) install.packages('glmnet')
+if (!require('Matrix')) install.packages('Matrix')
+if (!require('tidytext')) install.packages('tidytext')
+if (!require('rstanarm')) install.packages('rstanarm')
+if (!require('ggiraph')) install.packages('ggiraph')
+if (!require('leaflet')) install.packages('leaflet')
+if (!require('DT')) install.packages('DT')
+if (!require('patchwork')) install.packages('patchwork')
+if (!require('plotly')) install.packages('plotly')
+if (!require('abd')) install.packages('abd')
+if (!require('car')) install.packages('car')
+if (!require('ggResidpanel')) install.packages('ggResidpanel')
+if (!require('kableExtra')) install.packages('kableExtra')
+if (!require('performance')) install.packages('performance')
+if (!require('Lock5Data')) install.packages('Lock5Data')
+if (!require('gitcreds')) install.packages('gitcreds')
 
 devtools::install_github("danmorse314/hockeyR")
 devtools::install_github("easystats/easystats")
